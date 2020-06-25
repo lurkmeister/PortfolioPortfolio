@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<head><script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="https://kit.fontawesome.com/77772dcd49.js" crossorigin="anonymous"></script>
+<style>/* General CSS */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu, sans-serif;
+}
+#main {
+  background-image: linear-gradient(to top right, #800020, #702020, #800020, #702020, #800020);
+}
+/* Navbar CSS */
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  background-color: pink; /*TEST COLOR */
+  width: 100%;
+  box-shadow: 0px 2px gray;
+  padding: 20px 0px 19px 0px;
+}
+#navlist {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-right: 20px;
+}
+.navlist {
+  letter-spacing: 0.02em;
+  padding: 20px;
+  text-decoration: none;
+  color: #303841;
+  font-weight: 500;
+}
+.navlist:hover {
+  background-color: #800020;
+  color: pink;
+}
+/* Footer section CSS */
+#footer {
+  display: flex;
+  justify-content: flex-end;
+  bottom: 0;
+  width: 100%;
+  background-color: pink;
+  padding: 20px 0 20px 0;
+  border-top: 2px solid gray;
+}
+#footlist {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20px;
+  color: #303841;
+  font-weight: 500;
+}
+.footlist {
+  letter-spacing: 0.02em;
+  margin-right: 40px;
+}
+/* Welcome section CSS */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+#welcome-section > h1 {
+  color: pink;
+  padding: 5px;
+  letter-spacing: 0.1em;
+  font-size: 2em;
+}
+#welcome-section > p {
+  letter-spacing: 0.25em;
+  font-size: 1.25em;
+  color: beige;
+}
+/* Projects section CSS */
+#projects {
+  text-align: center;
+  padding: 0 20px 80px 20px;
+}
+#projects > h2 {
+  margin: 25px;
+  color: pink;
+  letter-spacing: 0.1em;
+}
+#project-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.project-tile {
+  background-color: #303841;
+  margin: 10px;
+  padding: 10px;
+}
+.project-image {
+  width: 350px;
+  height: calc(350px - 6.8rem);
+}
+.project-title {
+  margin-top: 5px;
+  padding: 20px;
+}
+.project-tile > a {
+  text-decoration: none;
+  color: pink;
+  letter-spacing: 0.05em;
+}
+.project-title:hover {
+  background-color: pink;
+  color: #303841;
+  font-weight: 600;
+}
+#BigGrayBox {
+  background-color: #303841;
+  margin: 0 35% 0 35%;
+  padding: 15px;
+}
+#MediumPinkBox {
+  background-color: pink;
+  padding: 10px;
+}
+.fuckkk {
+  color: #303841;
+  font-weight: 575;
+  text-decoration: none;
+  padding: 20px;
+  letter-spacing: 0.05em;
+}
+.fuckkk:hover {
+  background-color: #800020;
+  color: pink;
+}
+/* Contact section CSS */
+#Contact {
+  display: flex;
+  flex-direction: column;
+}
+#Asshole {
+  text-align: center;
+  font-size: 2.5em;
+  letter-spacing: 0.02em;
+  color: pink;
+  margin-bottom: 10px;
+}
+#you-too {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.25em;
+  letter-spacing: 0.05em;
+  color: beige;
+}
+#contact-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 15px 0px 15px 0px;
+  background-color: pink;
+}
+.Freud {
+  background-color: #303841;
+  padding: 25px;
+  color: pink;
+}
+.Freud > a {
+  text-decoration: none;
+  color: pink;
+  letter-spacing: 0.05em;
+}
+.Freud:hover {
+  background-color: #800020;
+}
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  #navbar {
+    display: flex;
+    justify-content: center;
+  }
+  #navlist {
+    margin-right: 0px;
+  }
+  #footer {
+    display: flex;
+    justify-content: center;
+  }
+  #footlist {
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-height: 400px) {
+  #footer {
+    position: relative;
+  }
+}</style></head>
+<!-- Navbar below -->
+<nav id="navbar">
+  <ul id="navlist">
+    <li><a href="#welcome-section" class="navlist">About Me</a></li>
+    <li><a href="#projects" class="navlist">Projects</a></li>
+    <li><a href="#Contact" class="navlist">Contact</a></li>
+  </ul>
+</nav>
+<!-- Welcome section below -->
+<main id="main">
+  <section id="welcome-section">
+  <h1>Jean Nomdeplume</h1>
+  <p>Web Development</p>
+</section>
+<!-- Projects section below -->
+<section id="projects">
+  <h2>Selected Work</h2>
+  <div id="project-container">
+    <div class="project-tile">
+      <a
+href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank"><img class="project-image"   src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" alt="project" />
+        <p class="project-title">Tribute Page</p></a>
+    </div>
+    <div class="project-tile">
+      <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank"><img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png" alt="project" />
+      <p class="project-title">Random Quote Machine</p></a>
+    </div>
+    <div class="project-tile">
+      <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank"><img class="project-image"     src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png" alt="project" />
+      <p class="project-title">Wikipedia Viewer</p>
+    </div>
+    <div class="project-tile">
+      <a     href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank"><img class="project-image"       src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png" alt="project" />
+        <p class="project-title">JavaScript Calculator</p></a>
+    </div>
+    <div class="project-tile">
+      <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank"><img class="project-image"   src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg" alt="project" />
+        <p class="project-title">Map Data across the Globe</p></a>
+    </div>
+    <div class="project-tile">
+      <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank"><img class="project-image"       src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png" alt="project" />
+        <p class="project-title">Tic-Tac-Toe Game</p></a>
+    </div>
+  </div>
+    <p><br></p>
+    <div id="BigGrayBox"><div id="MediumPinkBox"><p class="fuckkk"><a class="fuckkk" href="https://codepen.io/FreeCodeCamp/" id="profile-link" target="_blank">See more</a></p></div></div>
+</section>
+<!-- Contact section below -->
+  <section id="Contact">
+    <header id="contactheader">
+      <h2 id="Asshole">Let us get to work . . .</h2>
+      <p id="you-too">ask me how!</p>
+    </header>
+    <div id="contact-links">
+      <div id="Facebook-is-for-porn" class="Freud">
+        <a href="https://facebook.com/freecodecamp"
+      target="_blank"
+      class="btn contact-details">
+          <i class="fab fa-facebook-f"></i> Facebook</a>
+        </div>
+        <div id="Twitler" class="Freud">
+          <a href="https://twitter.com/freecodecamp" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+      <div id="GitFucked" class="Freud">
+        <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <div id="EmailMeInTheAss" class="Freud">
+        <a href="mailto:example@example.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+      </div>
+      <div id="PhoneSex" class="Freud">
+        <a href="tel:555-555-5555" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- Footer section below -->
+<footer id="footer">
+  <ul id="footlist">
+    <li class="footlist">Sample portfolio</li>
+    <li>Created for FreeCodeCamp</li>
+  </ul>
+</footer>
